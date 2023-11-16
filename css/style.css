@@ -1,0 +1,226 @@
+:root{
+    --bg-dark: #111722;
+    --bg-dark-black:#07072b;
+    /* --bg-dark-black: #011B2E; */
+}
+body {
+    background-color: var(--bg-dark);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 1.2em;
+    overflow-x: none;
+}
+::-webkit-scrollbar-track {
+    background-color: #0a062c;
+    margin-block: .25em;
+    border-radius: .7em;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #857207, #e6c408);
+    border-radius: 3em;
+}
+scrollbar {
+    width: 1.2em;
+}
+scrollbartrack {
+    background-color: #0a062c;
+    border-radius: .7em;
+}
+scrollbarthumb {
+    background: linear-gradient(to right, #857207, #e6c408);
+    border-radius: 3em;
+}
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    background-color: #0a062c;
+    margin-block: .25em;
+    border-radius: .7em;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #857207, #e6c408);
+    border-radius: 3em;
+}
+.bg-dark{
+    background-color: var(--bg-dark) !important;
+}
+.bg-dark-black{
+    background-color: var(--bg-dark-black);
+}
+.text-justify{
+    text-align: justify;
+}
+.filter-1{
+    filter: brightness(40%)
+}
+.filter-2 {
+    filter: brightness(30%)
+}
+.filter-3 {
+    filter: brightness(55%)
+}
+/* ---------------- header --------------------- */
+.header .navbar{
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.img-logo-website {
+    width: 30%; 
+}
+.dropdown-menu{
+    left: -65% !important;
+}
+/* ---------------- section hero --------------------- */
+.clip-path {
+    clip-path: circle(71.2% at 73% 49%);
+}
+.btn:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+.btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/* ---------------- section about us --------------------- */
+.title::before,
+.title:after {
+    content: "";
+    width: 2.5rem;
+    height: .2rem;
+    display: inline-block;
+    background-color: #7a7878;
+    margin: .3rem .63rem;
+    border-radius: 1rem;
+}
+.icon-img{
+    aspect-ratio: 2/2;
+}
+/* ---------------- section services --------------------- */
+.card-service {
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+.card-service:hover {
+    cursor: pointer;
+    transform: scale3d(1.06, 1.06, 0.3);
+    -webkit-transform: scale3d(1.06, 1.06, 0.3);
+    -moz-transform: scale3d(1.06, 1.06, 0.3);
+}
+.serviceOne::before,
+.serviceTwo::before,
+.serviceThree::before,
+.serviceFour::before,
+.serviceFive::before,
+.serviceSix::before,
+.serviceSeven::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #051937, #142a6b, #45369e, #8435c9, #ce12eb);
+    position: absolute;
+    z-index: -100;
+    clip-path: circle(73.7% at 100% 54%);
+}
+.serviceTwo::before {
+    clip-path: circle(69.9% at 0 54%);
+}
+.serviceThree::before {
+    clip-path: circle(73.7% at 100% 54%);
+}
+.serviceFour::before {
+    clip-path: circle(69.9% at 0 54%);
+}
+.serviceFive::before {
+    clip-path: circle(73.7% at 100% 54%);
+}
+.serviceSix::before {
+    clip-path: circle(69.9% at 0 54%);
+}
+/* ---------------- section cliente --------------------- */
+.img-container .col-6 {
+    flex: 0 0 auto;
+    width: 16.666%;
+}
+.img-container {
+    width: fit-content;
+}
+/* ----- ----- ICONO WHATSAPP----- ----- */
+.contact-whatsapp {
+    right: 1.5rem;
+    bottom: 1.5rem;
+}
+.icon-whatsapp {
+    width: 4rem;
+    height: 4rem;
+    background-color: #1eeb0c;
+}
+.pulsing {
+    box-shadow: 0 0 0 0 #1eeb0c;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    100% {
+        box-shadow: 0 0 0 30px #0000
+    }
+}
+
+/* ---------------- responsive desing--------------------- */
+@media (width < 768px){
+    .img-logo-website{
+        width: 65% !important;
+    }
+    .title::before,
+    .title:after {
+        display: none;
+    }
+    .btn-about,
+    .btn-quote{
+        width: 100% !important;
+    }
+    .carousel-item .card{
+        border: 0 !important;
+    }
+    .clip-path {
+        clip-path: initial;
+    }
+    .serviceOne::before,
+    .serviceTwo::before,
+    .serviceThree::before,
+    .serviceFour::before,
+    .serviceFive::before,
+    .serviceSix::before,
+    .serviceSeven::before {
+        clip-path: initial;
+    }
+}
+@media (768px <=width < 992px){
+    .ratio{
+        aspect-ratio: 2/2 !important;
+    }
+    .clip-path {
+        clip-path: initial;
+    }
+    .serviceOne::before,
+    .serviceTwo::before,
+    .serviceThree::before,
+    .serviceFour::before,
+    .serviceFive::before,
+    .serviceSix::before,
+    .serviceSeven::before {
+        clip-path: initial;
+    }
+}
