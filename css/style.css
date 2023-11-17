@@ -1,7 +1,6 @@
 :root{
     --bg-dark: #111722;
-    --bg-dark-black:#07072b;
-    /* --bg-dark-black: #011B2E; */
+    --bg-dark-black: #011B2E;
 }
 body {
     background-color: var(--bg-dark);
@@ -58,9 +57,6 @@ scrollbarthumb {
 .filter-2 {
     filter: brightness(30%)
 }
-.filter-3 {
-    filter: brightness(55%)
-}
 /* ---------------- header --------------------- */
 .header .navbar{
     background: rgba(255, 255, 255, 0);
@@ -74,8 +70,13 @@ scrollbarthumb {
     left: -65% !important;
 }
 /* ---------------- section hero --------------------- */
-.clip-path {
-    clip-path: circle(71.2% at 73% 49%);
+.section-hero-services{
+    background: linear-gradient(rgba(12, 11, 12, 0.8),
+                rgba(0, 0, 0, .3)),
+            url("../images/imagen-section-services.jpg")  center 0 / cover no-repeat;
+}
+.section-hero-services .content-hero{
+    padding-top: 14rem;
 }
 .btn:after {
     content: "";
@@ -194,9 +195,6 @@ scrollbarthumb {
     .carousel-item .card{
         border: 0 !important;
     }
-    .clip-path {
-        clip-path: initial;
-    }
     .serviceOne::before,
     .serviceTwo::before,
     .serviceThree::before,
@@ -208,11 +206,8 @@ scrollbarthumb {
     }
 }
 @media (768px <=width < 992px){
-    .ratio{
-        aspect-ratio: 2/2 !important;
-    }
-    .clip-path {
-        clip-path: initial;
+    .section-hero-services .content-hero {
+        padding-top: 50%;
     }
     .serviceOne::before,
     .serviceTwo::before,
