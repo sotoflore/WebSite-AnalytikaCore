@@ -58,9 +58,9 @@ scrollbarthumb {
     filter: brightness(20%)
 }
 /* ---------------- header --------------------- */
-/* .header .navbar{
-    background-color: var(--bg-dark);
-} */
+.header .navbar{
+    transition: background 1s ease-in-out;
+}
 .img-logo-website {
     width: 30%; 
 }
