@@ -55,14 +55,12 @@ scrollbarthumb {
     filter: brightness(40%)
 }
 .filter-2 {
-    filter: brightness(30%)
+    filter: brightness(20%)
 }
 /* ---------------- header --------------------- */
-.header .navbar{
-    background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-}
+/* .header .navbar{
+    background-color: var(--bg-dark);
+} */
 .img-logo-website {
     width: 30%; 
 }
@@ -72,7 +70,7 @@ scrollbarthumb {
 /* ---------------- section hero --------------------- */
 .section-hero-services{
     background: linear-gradient(rgba(12, 11, 12, 0.8),
-                rgba(0, 0, 0, .3)),
+                rgba(0, 0, 0, .7)),
             url("../images/imagen-section-services.jpg")  center 0 / cover no-repeat;
 }
 .section-hero-services .content-hero{
@@ -131,7 +129,7 @@ scrollbarthumb {
     content: "";
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(circle, #051937, #142a6b, #45369e, #8435c9, #ce12eb);
+    background-image: radial-gradient(circle, #051937, #142a6b, #45369e, #8435c9, #6b077a);
     position: absolute;
     z-index: -100;
     clip-path: circle(73.7% at 100% 54%);
