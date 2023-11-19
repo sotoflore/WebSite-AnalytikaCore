@@ -57,6 +57,7 @@ scrollbarthumb {
 .filter-2 {
     filter: brightness(20%)
 }
+
 /* ---------------- header --------------------- */
 .header .navbar{
     transition: all .5s ease-in-out;
