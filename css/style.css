@@ -59,7 +59,7 @@ scrollbarthumb {
 }
 /* ---------------- header --------------------- */
 .header .navbar{
-    transition: background 1s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .img-logo-website {
     width: 30%; 
@@ -124,8 +124,7 @@ scrollbarthumb {
 .serviceThree::before,
 .serviceFour::before,
 .serviceFive::before,
-.serviceSix::before,
-.serviceSeven::before {
+.serviceSix::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -133,6 +132,7 @@ scrollbarthumb {
     position: absolute;
     z-index: -100;
     clip-path: circle(73.7% at 100% 54%);
+    border-radius: 0 2rem 2rem 0;
 }
 .serviceTwo::before {
     clip-path: circle(69.9% at 0 54%);
@@ -149,10 +149,15 @@ scrollbarthumb {
 .serviceSix::before {
     clip-path: circle(69.9% at 0 54%);
 }
+.serviceTwo::before,
+.serviceFour::before,
+.serviceSix::before{
+    border-radius: 2rem 0 0 2rem !important;
+}
 /* ---------------- section cliente --------------------- */
 .img-container .col-6 {
     flex: 0 0 auto;
-    width: 16.666%;
+    width: 20%;
 }
 .img-container {
     width: fit-content;
