@@ -57,7 +57,14 @@ scrollbarthumb {
 .filter-2 {
     filter: brightness(20%)
 }
-
+.nav-tabs .nav-link:hover{
+    border-color: #ffc107 !important;
+}
+.nav-link.active{
+    background-color: #ffc107 !important;
+    color: #000 !important;
+    border: 0 !important;
+}
 /* ---------------- header --------------------- */
 .header .navbar{
     transition: all .5s ease-in-out;
