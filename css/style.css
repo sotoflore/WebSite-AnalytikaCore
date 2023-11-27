@@ -60,7 +60,6 @@ scrollbarthumb {
 .nav-link.active{
     color: #000 !important;
 }
-/* ---------------- header --------------------- */
 .header .navbar{
     transition: all .5s ease-in-out;
 }
@@ -70,7 +69,6 @@ scrollbarthumb {
 .dropdown-menu{
     left: -65% !important;
 }
-/* ---------------- section hero --------------------- */
 .section-hero-services{
     background: linear-gradient(rgba(12, 11, 12, 0.8),
                 rgba(0, 0, 0, .7)),
@@ -96,7 +94,6 @@ scrollbarthumb {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
-/* ---------------- section about us --------------------- */
 .title::before,
 .title:after {
     content: "";
@@ -110,7 +107,6 @@ scrollbarthumb {
 .icon-img{
     aspect-ratio: 2/2;
 }
-/* ---------------- section services --------------------- */
 .card-service {
     transition: .5s, color .10s;
     -webkit-transition: .5s, color .10s;
@@ -157,7 +153,6 @@ scrollbarthumb {
 .serviceSix::before{
     border-radius: 2rem 0 0 2rem !important;
 }
-/* ---------------- section cliente --------------------- */
 .img-container .col-6 {
     flex: 0 0 auto;
     width: 20%;
@@ -165,7 +160,6 @@ scrollbarthumb {
 .img-container {
     width: fit-content;
 }
-/* ----- ----- ICONO WHATSAPP----- ----- */
 .contact-whatsapp {
     right: 1.5rem;
     bottom: 1.5rem;
@@ -184,8 +178,10 @@ scrollbarthumb {
         box-shadow: 0 0 0 30px #0000
     }
 }
-
-/* ---------------- responsive desing--------------------- */
+.img-flag{
+    width: 2rem;
+    height: 2rem;
+}
 @media (width < 768px){
     .img-logo-website{
         width: 65% !important;
