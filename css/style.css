@@ -2,6 +2,9 @@
     --bg-dark: #111722;
     --bg-dark-black: #011B2E;
 }
+html {
+    scroll-padding-top: 170px;
+}
 body {
     background-color: var(--bg-dark);
     font-family: 'Roboto Condensed', sans-serif;
