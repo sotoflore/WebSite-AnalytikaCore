@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 ::-webkit-scrollbar {
-    width: 1.2em;
+    width: 1em;
     overflow-x: none;
 }
 ::-webkit-scrollbar-track {
@@ -23,7 +23,7 @@ body {
     border-radius: 3em;
 }
 scrollbar {
-    width: 1.2em;
+    width: 1em;
 }
 scrollbartrack {
     background-color: #0a062c;
@@ -34,7 +34,7 @@ scrollbarthumb {
     border-radius: 3em;
 }
 ::-webkit-scrollbar {
-    width: 1em;
+    width: .6em;
 }
 ::-webkit-scrollbar-track {
     background-color: #0a062c;
